@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">AFAshop</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="boton-menu boton-volver" href="index.html"><i class="bi bi-arrow-return-left"></i> Continuar comprando </a>
+                        </li>
+                        
+                        <li>
+                            <a class="boton-menu boton-carrito active" href="carrito.html">Carrito <i class="bi bi-cart4"></i> <span class="unidades">0</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">
+                Carrito
+            </h2>
+
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito esta vacío</p>
+
+                <div class="carrito-productos disabled">
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-img" src="./img/camiseta/camiseta.webp" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>título</small>
+                            <h3>Camiseta</h3>
+                        </div>
+
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+
+                        <div class="carrito-prodcuto-precio">
+                            <small>Precio</small>
+                            <p>$14000</p>
+                        </div>
+
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$14000</p>
+                        </div>
+
+                        <button class="carrito-producto-eliminar">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-img" src="./img/pantalon/pantalon.webp" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>título</small>
+                            <h3>Pantalon</h3>
+                        </div>
+    
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+    
+                        <div class="carrito-prodcuto-precio">
+                            <small>Precio</small>
+                            <p>$8000</p>
+                        </div>
+    
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$8000</p>
+                        </div>
+    
+                        <button class="carrito-producto-eliminar">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="carrito-acciones disabled">
+                    <div class="carrito-izquierda">
+                        <button class="vaciar-carrito">Vaciar carrtio</button>
+                    </div>
+
+                    <div class="carrito-derecha">
+                        <div class="carrito-total">
+                            <p>Total:</p>
+                            <p id="total">$10</p>
+                        </div>
+
+                        <button class="carrito-comprar">Finalizar compra</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </main>
+    </div>
+    <script src="/carrito.js"></script>
+</body>
+</html>
